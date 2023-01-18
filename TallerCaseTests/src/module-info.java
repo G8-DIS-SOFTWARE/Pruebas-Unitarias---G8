@@ -6,4 +6,5 @@
  *
  */
 module TallerCaseTests {
+	requires junit;
 }
