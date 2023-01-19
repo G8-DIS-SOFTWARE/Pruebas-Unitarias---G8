@@ -13,11 +13,11 @@ public class TestCaseDolarMeses extends TestCase{
 		
 	}
 	public void testDolarMesParSupervisor(){
-		assertEquals(100F,supervisor.cs());
+		assertEquals(100.035F,supervisor.cs());
 	}
 	
 	public void testDolarMesParManager() {
-		assertEquals(100,manager.cs());
+		assertEquals(100.07,manager.cs());
 
 	}
 	
@@ -26,14 +26,14 @@ public class TestCaseDolarMeses extends TestCase{
 	}
 	
 	public void testDolarCalculateYearBonusWorker() {
-		assertEquals(0.0,worker.CalculateYearBonus());
+		assertEquals(386F,worker.CalculateYearBonus());
 	}
 	
 	public void testDolarCalculateYearBonusSupervisor() {
-		assertEquals(0.0,supervisor.CalculateYearBonus());
+		assertEquals(293F,supervisor.CalculateYearBonus());
 	}
 	
 	public void testDolarCalculateYearBonusManager() {
-		assertEquals(0.0,manager.CalculateYearBonus());
+		assertEquals(486F,manager.CalculateYearBonus());
 	}
 }

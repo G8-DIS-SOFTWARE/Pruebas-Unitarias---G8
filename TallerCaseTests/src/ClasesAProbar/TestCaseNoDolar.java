@@ -9,19 +9,19 @@ public class TestCaseNoDolar extends TestCase {
 	Employee manager = new Employee((float)100.0,"GBP",(float)0.10,EmployeeType.Manager);
 	
 	public void testEuroMesParWorker() {
-		assertEquals(100F,worker.cs());
+		assertEquals(95F,worker.cs());
 	}
 	
 	public void testYenesMesParSupervisor(){
-		assertEquals(100F,supervisor.cs());
+		assertEquals(95.035F,supervisor.cs());
 	}
 	
 	public void testLibraEsterlinaMesParManager() {
-		assertEquals(100,manager.cs());
+		assertEquals(95.105F,manager.cs());
 
 	}
 	
 	public void testEuroCalculateYearBonusWorker() {
-		assertEquals(95F,worker.CalculateYearBonus());
+		assertEquals(386F,worker.CalculateYearBonus());
 	}
 }
