@@ -8,6 +8,7 @@ public class TestCaseNoDolar extends TestCase {
 	Employee supervisor = new Employee((float)100.0,"JPY",(float)0.10,EmployeeType.Supervisor);
 	Employee manager = new Employee((float)100.0,"GBP",(float)0.10,EmployeeType.Manager);
 	
+	
 	public void testEuroMesParWorker() {
 		assertEquals(95F,worker.cs());
 	}
