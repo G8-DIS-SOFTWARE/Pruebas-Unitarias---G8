@@ -24,4 +24,16 @@ public class TestCaseDolarMeses extends TestCase{
 	public void testDolarMesImparWorker() {
 		assertEquals(164.33334F,worker.cs());
 	}
+	
+	public void testDolarCalculateYearBonusWorker() {
+		assertEquals(0.0,worker.CalculateYearBonus());
+	}
+	
+	public void testDolarCalculateYearBonusSupervisor() {
+		assertEquals(0.0,supervisor.CalculateYearBonus());
+	}
+	
+	public void testDolarCalculateYearBonusManager() {
+		assertEquals(0.0,manager.CalculateYearBonus());
+	}
 }

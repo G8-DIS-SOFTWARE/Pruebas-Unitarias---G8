@@ -20,4 +20,8 @@ public class TestCaseNoDolar extends TestCase {
 		assertEquals(100,manager.cs());
 
 	}
+	
+	public void testEuroCalculateYearBonusWorker() {
+		assertEquals(95F,worker.CalculateYearBonus());
+	}
 }
